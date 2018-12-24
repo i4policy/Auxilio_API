@@ -109,7 +109,9 @@
           "create":true,
           "deleteById": true,
           "replaceById":true,
-          "patchAttributes":true
+          "patchAttributes":true,
+          "updateMyPost": true,
+          "deleteMyPost": true
         }
       }
     }
