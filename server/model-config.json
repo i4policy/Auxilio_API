@@ -129,7 +129,10 @@
           "create":true,
           "deleteById": true,
           "replaceById":true,
-          "patchAttributes":true
+          "patchAttributes":true,
+          "updateMyFeedback": true,
+          "deleteMyFeedback": true,
+          "createFeedback": true
         }
       }
     }
@@ -146,7 +149,10 @@
           "create":true,
           "deleteById": true,
           "replaceById":true,
-          "patchAttributes":true
+          "patchAttributes":true,
+          "updateMyReply": true,
+          "deleteMyReply": true,
+          "createReply": true
         }
       }
     }
@@ -165,6 +171,15 @@
   },
   "Container": {
     "dataSource": "storage",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "download": true,
+          "customUpload": true
+        }
+      }
+    }
   }
 }
